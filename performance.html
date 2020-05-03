@@ -39,9 +39,9 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <td v-for="row in table.data">
-                                            {{ row }}
+                                    <tr v-for="row in table.data">
+                                        <td v-for="value in row">
+                                            {{ value }}
                                         </td>
                                     </tr>
                                 </tbody>
