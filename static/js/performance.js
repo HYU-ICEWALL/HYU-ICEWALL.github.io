@@ -2,16 +2,16 @@ var t =
     new Vue({
         el: '#view_tables',
         data: function () {
+            this.update_tables("https://0554824e-b41e-45ef-983d-359639fe3741.mock.pstmn.io/performance_tables")
             return {
-                tables: [{
-                    title: '동아리 수상 경력',
-                    columns: ['번호', '구분', '대회명', '수상내역', '수상년도'],
-                    data: [1, '대내', '제 2회 한양대학교 해킹방어대회(HCTF)', '1위', 2019]
-                }, {
-                    title: '동아리 활동 경력',
-                    columns: ['번호', '활동내역', '년도'],
-                    data: [1, '학내 홈페이지 상시 점검', '2019']
-                }]
+                tables: {}
+            }
+        },
+        methods: {
+            update_tables: function (uri) {
+                axios.get(uri).then(rep => {
+                    this.tables = rep.data.tables;
+                })
             }
         }
     })
