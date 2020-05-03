@@ -1,3 +1,9 @@
+.sidebar_top {
+    font-size: 2em;
+    font-weight: bold;
+    padding-bottom: 10px;
+    border-bottom: 2px #000000 solid;
+}
 
 .sidebar_list {
     list-style: none;

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="static/css/sidebar.css">
     <title>한양대학교 학생보안팀 ICEWALL</title>
 </head>
 
@@ -29,78 +30,96 @@
 
     <!-- 게시판 글 목록 -->
     <div class="container">
-        <table class="table tale-striped table-hover">
-            <thead>
-                <tr>
-                    <th>번호</th>
-                    <th>제목</th>
-                    <th>글쓴이</th>
-                    <th>작성일</th>
-                    <th>조회수</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td><a class="text-dark" href="./board_view.html">board 테스트</a></td>
-                    <td>1cekrim</td>
-                    <td>2020/05/03</td>
-                    <td>0</td>
-                </tr>
-                <tr>
-                    <td>0</td>
-                    <td><a class="text-dark" href="./board_view.html">board 테스트</a></td>
-                    <td>1cekrim</td>
-                    <td>2020/05/03</td>
-                    <td>0</td>
-                </tr>
-            </tbody>
-        </table>
-        <button type="button" class="btn btn-success">글 작성하기</button>
-        <nav aria-label="page navigation">
-            <ul class="pagination justify-content-center">
-                <li class="page-item">
-                    <a class="page-link" href="#" aria-label="Previous">
-                        <span aria-hidden="true">&laquo;</span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                </li>
-                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item">
-                    <a class="page-link" href="#" aria-label="Next">
-                        <span aria-hidden="true">&raquo;</span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-        <div class="row justify-content-center">
-            <div class="col-xs-8 col-xs-offset-2">
-                <div class="input-group mb-3">
-                    <div class="input-group-append search-panel">
-                        <button type="button" class="btn btn-default btn-outline-primary dropdown-toggle"
-                            data-toggle="dropdown">
-                            <span id="search_category">전체</span> <span class="caret"></span>
-                        </button>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a class="dropdown-item" href="#category_all">전체</a></li>
-                            <li><a class="dropdown-item" href="#category_title">제목</a></li>
-                            <li><a class="dropdown-item" href="#category_content">내용</a></li>
-                            <li><a class="dropdown-item" href="#category_title_content">제목+내용</a></li>
-                            <li><a class="dropdown-item" href="#category_author">글쓴이</a></li>
-                        </ul>
-                    </div>
-                    <input type="hidden" name="category" value="category_all" id="category">
-                    <input type="text" class="form-control border-primary" name="keyword" placeholder="">
-                    <span class="input-group-append">
-                        <button class="btn btn-outline-primary" type="button">
-                            <i class="fa fa-search"></i>
-                        </button>
-                    </span>
+        <div class="row">
+            <aside class="col-md-3">
+                <div class="sidebar_top">
+                    <h2>게시판</h2>
                 </div>
-            </div>
+                <ul class="sidebar_list">
+                    <li>
+                        <a href="./board.html" class="selected">공지사항</a>
+                    </li>
+                    <li>
+                        <a href="./board.html">사진</a>
+                    </li>
+                </ul>
+            </aside>
+            <main class="col-md-9">
+                <table class="table tale-striped table-hover">
+                    <thead>
+                        <tr>
+                            <th>번호</th>
+                            <th>제목</th>
+                            <th>글쓴이</th>
+                            <th>작성일</th>
+                            <th>조회수</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td><a class="text-dark" href="./board_view.html">board 테스트</a></td>
+                            <td>1cekrim</td>
+                            <td>2020/05/03</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>0</td>
+                            <td><a class="text-dark" href="./board_view.html">board 테스트</a></td>
+                            <td>1cekrim</td>
+                            <td>2020/05/03</td>
+                            <td>0</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button type="button" class="btn btn-success">글 작성하기</button>
+                <nav aria-label="page navigation">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="row justify-content-center">
+                    <div class="col-xs-8 col-xs-offset-2">
+                        <div class="input-group mb-3">
+                            <div class="input-group-append search-panel">
+                                <button type="button" class="btn btn-default btn-outline-primary dropdown-toggle"
+                                    data-toggle="dropdown">
+                                    <span id="search_category">전체</span> <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a class="dropdown-item" href="#category_all">전체</a></li>
+                                    <li><a class="dropdown-item" href="#category_title">제목</a></li>
+                                    <li><a class="dropdown-item" href="#category_content">내용</a></li>
+                                    <li><a class="dropdown-item" href="#category_title_content">제목+내용</a></li>
+                                    <li><a class="dropdown-item" href="#category_author">글쓴이</a></li>
+                                </ul>
+                            </div>
+                            <input type="hidden" name="category" value="category_all" id="category">
+                            <input type="text" class="form-control border-primary" name="keyword" placeholder="">
+                            <span class="input-group-append">
+                                <button class="btn btn-outline-primary" type="button">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
         </div>
     </div>
 
