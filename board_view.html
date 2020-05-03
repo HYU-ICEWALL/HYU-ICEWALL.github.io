@@ -30,27 +30,46 @@
 
     <!-- 게시글 -->
     <div class="container">
-        <!-- 상단 -->
-        <div class="card">
-            <div class="card-header" style="font-size: 14px;">
-                <div class="d-inline">
-                    <span class="font-weight-bold" id="title">board 테스트</span>
+        <div class="row">
+            <aside class="col-md-3">
+                <div class="sidebar_top">
+                    <h2>게시판</h2>
                 </div>
-                <div class="d-inline pull-right">
-                    <span id="date">2020/05/03 02:30</span>
+                <ul class="sidebar_list">
+                    <li>
+                        <a href="./board.html" class="selected">공지사항</a>
+                    </li>
+                    <li>
+                        <a href="./board.html">사진</a>
+                    </li>
+                </ul>
+            </aside>
+            <section class="col-md-9">
+                <div class="header_nav">
+                    공지사항
                 </div>
-                <hr class="header_divider">
-                <div class="d-inline">
-                    <span class="font-weight-normal" id="author">1cekrim</span>
-                </div>
-                <div class="d-inline pull-right">
-                    <span class='pr-2'>조회수<b class='pl-1' id="views">0</b></span>
-                    <span class='pr-2'>댓글<b class='pl-1' id="comments">0</b></span>
-                </div>
-            </div>
-            <div class="card-body">
-                게시글 내용
-            </div>
+                <article class="card">
+                    <header class="card-header" style="font-size: 14px;">
+                        <div class="d-inline">
+                            <span class="font-weight-bold" id="title">board 테스트</span>
+                        </div>
+                        <div class="d-inline pull-right">
+                            <span id="date">2020/05/03 02:30</span>
+                        </div>
+                        <hr class="header_divider">
+                        <div class="d-inline">
+                            <span class="font-weight-normal" id="author">1cekrim</span>
+                        </div>
+                        <div class="d-inline pull-right">
+                            <span class='pr-2'>조회수<b class='pl-1' id="views">0</b></span>
+                            <span class='pr-2'>댓글<b class='pl-1' id="comments">0</b></span>
+                        </div>
+                    </header>
+                    <div class="card-body">
+                        게시글 내용
+                    </div>
+                </article>
+            </section>
         </div>
     </div>
 

@@ -3,3 +3,57 @@ hr.header_divider {
     margin-bottom: 0.35em !important;
     border-width: 1px;
 }
+
+.sidebar_top {
+    font-size: 2em;
+    font-weight: bold;
+    padding-bottom: 10px;
+    border-bottom: 2px #000000 solid;
+}
+
+.header_nav {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px #000000 solid;
+}
+
+.sidebar_list {
+    list-style: none;
+    display: block;
+    padding-inline-start: 0px;
+}
+
+.sidebar_list>li {
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar_list>li>a {
+    font-weight: bold;
+    color: black;
+    border-bottom: 1px #999999 solid;
+    display: block;
+    font-size: 16px;
+    height: 40px;
+    line-height: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.sidebar_list>li>a.selected {
+    color: steelblue;
+}
+
+.sidebar_list>li>a:hover {
+    color: steelblue;
+    text-decoration: none;
+}
+
+.sidebar_list>li>a:link {
+    text-decoration: none;
+}
+
+.sidebar_list>li>a:visited {
+    text-decoration: none;
+}
