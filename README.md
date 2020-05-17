@@ -10,6 +10,25 @@
 - 필요한 거 우겨넣고 재작업 하면서 계속 내용 업데이트 합니다.
 - 필요시 프레임워크와 라이브러리들을 활용합니다.
 
+## 개발 스택
+- Bootstrap (v4.5.0 compiled)
+- jQuery https://code.jquery.com/jquery-3.5.1.min.js
+- Popper.js https://unpkg.com/@popperjs/core@2.4.0/dist/umd/popper.min.js
+
+~~~
+static
+├── css
+│   ├── board_view.css
+│   ├── bootstrap.min.css
+│   ├── header_nav.css
+│   └── sidebar.css
+└── js
+    ├── bootstrap.min.js
+    ├── jquery-3.5.1.min.js
+    ├── performance.js
+    └── popper.min.js
+~~~
+
 ## 작업 시기
 - 2020.05.02 ~ (1개월 추산)
 
