@@ -10,13 +10,16 @@
     <link rel="stylesheet" href="./static/css/bootstrap.min.css">
 
     <!-- CSS -->
+    <link rel="stylesheet" href="./static/css/index.css">
+
+    <script src="https://kit.fontawesome.com/72342c6a2a.js" crossorigin="anonymous"></script>
 
     <title>ICEWALL - 한양대학교 학생보안팀</title>
 </head>
 <body>
 
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="./index.html">ICEWALL</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,7 +36,7 @@
                 <li class="nav-item nav-link">
                     <a class="nav-link" href="./index.html">About </a>
                 </li>
-                <!-- 공지사항, 자유게시판 -->
+                <!-- 공지사항, 자유게시판, ... -->
                 <li class="nav-item nav-link">
                     <a class="nav-link" href="./board.html">Board </a>
                 </li>
@@ -47,7 +50,115 @@
         </div>
     </nav>
 
-    <!-- Carousel -->
+    <!-- Main container -->
+    <div id="main" class="">
+
+        <section class="container my-4 p-4 bg-white">
+            <!-- Carousel -->
+            <div id="carousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel" data-slide-to="1"></li>
+                    <li data-target="#carousel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./static/images/icewall_1.jpg" class="d-block w-100" alt="첫번째 이미지">
+                </div>
+                <div class="carousel-item">
+                    <img src="./static/images/icewall_2.jpg" class="d-block w-100" alt="두번째 이미지">
+                </div>
+                <div class="carousel-item">
+                    <img src="./static/images/icewall_3.jpg" class="d-block w-100" alt="세번째 이미지">
+                </div>
+                </div>
+                <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
+            <div class="container my-4">
+                <p>
+                    &emsp;<strong style="font-size: large;">Lorem</strong> Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+                <p>
+                    &emsp;<strong style="font-size: large;">Lorem</strong> Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+                <p>
+                    &emsp;<strong style="font-size: large;">Lorem</strong> Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+                <p>
+                    &emsp;<strong style="font-size: large;">Lorem</strong> Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+                <button id="topBtn">
+                    <i class="fas fa-arrow-up"></i>
+                </button>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="" style="background-color: #E6E6E6;">
+                  <div class="row">
+                    <div class="footer-col col-md-6">
+                        <!-- gmail, facebook, messenger, github, youtube -->
+                        <div class="row">
+                            <div class="col-12">
+                                <h5>Social Media</h5><hr>
+                                <div id="social">
+                                    <a href="mailto:icewall.executive@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                                    <a href="https://www.facebook.com/icewall.hyu" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="https://www.messenger.com/t/icewall.hyu" target="_blank"><i class="fab fa-facebook-messenger"></i></a>
+                                    <a href="https://github.com/HYU-ICEWALL" target="_blank"><i class="fab fa-github"></i></a>
+                                    <a href="https://www.youtube.com/channel/UCaVXnXoRT2y-8PcGXlt70Jg/featured" target="_blank"><i class="fab fa-youtube"></i></a>
+                                </div>
+                                <br>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">    
+                                <h5>Contact</h5><hr>
+                                <p>
+                                    icewall.executive@gmail.com 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-col col-md-6 mb-2">
+                        <h5>2020 임원진</h5><hr>
+                        <div class="row">
+                            <div class="col-md-6">
+                                회장_김현수<br>
+                                부회장_김수연<br>
+                                총무_김지훈<br>
+                                기획부_최서연<br>
+                                기획부_차다윤<br>
+                                인사부장_박예진<br>
+                                기술부장_조현서<br>
+                            </div>
+                            <div class="col-md-6">
+                                aaa@gmail.com<br>
+                                bbb@gmail.com<br>
+                                ccc@gmail.com<br>
+                                aaa@gmail.com<br>
+                                bbb@gmail.com<br>
+                                ccc@gmail.com<br>
+                                jhcse5189@gmail.com<br>
+                            </div>
+                        </div>
+                        <br>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
 
     <!-- Recent Event
     - 모집 마감
@@ -56,13 +167,37 @@
     - CTF 과제 및 대회 소식
     -->
 
-    <!-- About ICEWALL -->
+    <!-- About ICEWALL
+    - 소개 및 FAQ 합치기
+    -->
 
     <!-- Gallery -->
 
     <!-- Sponsores / Contact / Copyright -->
 
 
+    <!-- Footer -->
+    <!-- Contact section -->
+    <footer>
+        <!-- Copyright section -->
+        <div id="copyright" class="footer-below pb-4">
+
+            <div class="container">
+                <p></p>
+                <hr style="color: #6A6F7A">
+                <p class="text-center" style="color: #919191">
+                    COPYRIGHT &copy; 2020 Hanyang University Student CERT, ICEWALL. All rights reserved. ||
+                    <a href="#" style="color: gray;">
+                        <strong>개인정보처리방침</strong>
+                    </a>
+                </p>
+                <br>
+            </div>
+        </div>
+    </footer>
+
+
+    
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="./static/js/jquery-3.5.1.min.js"></script>
@@ -70,6 +205,6 @@
     <script src="./static/js/bootstrap.min.js"></script>
 
     <!-- JS -->
-
+    <script src="./static/js/index.js"></script>
 </body>
 </html>

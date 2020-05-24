@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/earlyaccess/jejugothic.css');
+
+body {
+    font-family: 'Nanum Gothic';
+    background-color: #F2F2F2;
+}
+
+h1, h2, h3, h4, h5, .navbar-brand {
+    font-family: 'Jeju Gothic';
+}
+
+#section {
+    /* or #7f8c8d */
+    box-shadow: 0px 0px 4px -4px rgba(0,0,0,.8);
+}
+
+.footer {
+    background-color: #E6E6E6;
+}
+
+#social {
+    display: flex;
+}
+
+#social a {
+    margin: 0 10px;
+    width: 35px;
+    height: 35px;
+    background-color: #ccc;
+    display: inline-block;
+    border-radius: 12px;
+
+    box-shadow: 6px 6px 12px rgba(0,0,0,.15),
+                -6px -6px 12px rgba(255,255,255,.1);
+    overflow: hidden;
+    font-size: 20px;
+    transition: .3s linear;
+    position: relative;
+}
+
+#social a:hover {
+    transform: scale(1.2);
+    border-radius: 50%;
+}
+
+#social a i::before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: 200% 200%;
+    background-position: 75% 75%;
+    text-align: center;
+    top: 0;
+    left: 0;
+    /* same with width and height */
+    line-height: 35px;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: .4s linear;
+}
+
+#social a:hover i::before {
+    background-position: 0% 0%;
+}
+
+.fa-envelope::before {
+    background-image: linear-gradient(135deg, #424242 30%, #0A3D62 50%);
+}
+
+.fa-facebook-f::before {
+    background-image: linear-gradient(135deg, #3B5998 30%, #0A3D62 50%);
+}
+
+.fa-facebook-messenger::before {
+    background-image: linear-gradient(135deg, #01A6FF 30%, #0A3D62 50%);
+}
+
+.fa-github::before {
+    background-image: linear-gradient(135deg, #7C007C 30%, #0A3D62 50%);
+}
+
+.fa-youtube::before {
+    background-image: linear-gradient(135deg, #D71E18 30%, #0A3D62 50%);
+}
+
+#copyright {
+    
+}
+
+#topBtn {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    font-size: 22px;
+    width: 50px;
+    height: 50px;
+    background: #e74c3c;
+    color: white;
+    border: none;
+    cursor: pointer;
+
+    display: none;
+}
+
+
