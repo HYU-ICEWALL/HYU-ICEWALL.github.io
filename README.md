@@ -16,17 +16,25 @@
 - Popper.js https://unpkg.com/@popperjs/core@2.4.0/dist/umd/popper.min.js
 
 ~~~
-static
-├── css
-│   ├── board_view.css
-│   ├── bootstrap.min.css
-│   ├── header_nav.css
-│   └── sidebar.css
-└── js
-    ├── bootstrap.min.js
-    ├── jquery-3.5.1.min.js
-    ├── performance.js
-    └── popper.min.js
+.
+├── README.md
+├── about.html
+├── awards.html
+├── board.html
+├── gallary.html
+├── index.html
+├── services.html
+│
+└──static
+    ├── css
+    ├── font
+    ├── img
+    │   ├── icon
+    │   └── logo
+    │       ├── hanyang
+    │       ├── icewall
+    │       └── scv
+    └── js
 ~~~
 
 ## 작업 시기

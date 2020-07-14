@@ -27,33 +27,28 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
+                <!-- TODO: off active -->
+                <!-- ICEWALL 소개, 임원진 소개, 활동, 실적, ... -->
                 <li class="nav-item nav-link active">
                     <a class="nav-link" href="./index.html">
-                        Home <span class="sr-only">(current)</span>
+                        About<span class="sr-only">(current)</span>
                     </a>
-                </li>
-                <!-- ICEWALL 소개, 임원진 소개, 활동, 실적, ... -->
-                <li class="nav-item nav-link">
-                    <a class="nav-link" href="./index.html">About </a>
                 </li>
                 <!-- 공지사항, 자유게시판, ... -->
                 <li class="nav-item nav-link">
                     <a class="nav-link" href="./board.html">Board </a>
                 </li>
                 <li class="nav-item nav-link">
-                    <a class="nav-link" href="./performance.html">Performance </a>
-                </li>
-                <li class="nav-item nav-link">
-                    <a class="nav-link" href="./index.html">Recruit </a>
+                    <a class="nav-link" href="./performance.html">Career </a>
                 </li>
             </ul>
         </div>
     </nav>
 
     <!-- Main container -->
-    <div id="main" class="">
+    <div id="main" class="container" style="padding: 0;">
 
-        <section class="container my-4 p-4 bg-white">
+        <div class="bg-white">
             <!-- Carousel -->
             <div id="carousel" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
@@ -82,7 +77,7 @@
                 </a>
             </div>
 
-            <div class="container my-4">
+            <div class="container">
                 <p>
                     &emsp;<strong style="font-size: large;">Lorem</strong> Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                 </p>
@@ -98,67 +93,90 @@
                 <button id="topBtn">
                     <i class="fas fa-arrow-up"></i>
                 </button>
-            </div>
-        </section>
+                <h3>test</h3>
+                <div>
+                    <a href="#">no margin</a>
+                </div>
 
-        <section>
-            <div class="container">
-                <div class="" style="background-color: #E6E6E6;">
-                  <div class="row">
-                    <div class="footer-col col-md-6">
-                        <!-- gmail, facebook, messenger, github, youtube -->
-                        <div class="row">
-                            <div class="col-12">
-                                <h5>Social Media</h5><hr>
-                                <div id="social">
-                                    <a href="mailto:icewall.executive@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
-                                    <a href="https://www.facebook.com/icewall.hyu" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                                    <a href="https://www.messenger.com/t/icewall.hyu" target="_blank"><i class="fab fa-facebook-messenger"></i></a>
-                                    <a href="https://github.com/HYU-ICEWALL" target="_blank"><i class="fab fa-github"></i></a>
-                                    <a href="https://www.youtube.com/channel/UCaVXnXoRT2y-8PcGXlt70Jg/featured" target="_blank"><i class="fab fa-youtube"></i></a>
-                                </div>
-                                <br>
+
+            </div>
+        </div>
+
+        <div>
+            <div class="container p-4" style="background-color: #E6E6E6;">
+                <div class="row">
+                <div class="col-md-6 mt-2">
+                    <!-- gmail, facebook, messenger, github, youtube -->
+                    <div class="row mb-4">
+                        <div class="col-12">
+                            <h5>Social Media</h5><hr>
+                            <div id="social">
+                                <a href="mailto:icewall.executive@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                                <a href="https://www.facebook.com/icewall.hyu" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://www.messenger.com/t/icewall.hyu" target="_blank"><i class="fab fa-facebook-messenger"></i></a>
+                                <a href="https://github.com/HYU-ICEWALL" target="_blank"><i class="fab fa-github"></i></a>
+                                <a href="https://www.youtube.com/channel/UCaVXnXoRT2y-8PcGXlt70Jg/featured" target="_blank"><i class="fab fa-youtube"></i></a>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col">    
-                                <h5>Contact</h5><hr>
-                                <p>
-                                    icewall.executive@gmail.com 
-                                </p>
-                            </div>
+                            <br>
                         </div>
                     </div>
-                    <div class="footer-col col-md-6 mb-2">
-                        <h5>2020 임원진</h5><hr>
-                        <div class="row">
-                            <div class="col-md-6">
-                                회장_김현수<br>
-                                부회장_김수연<br>
-                                총무_김지훈<br>
-                                기획부_최서연<br>
-                                기획부_차다윤<br>
-                                인사부장_박예진<br>
-                                기술부장_조현서<br>
-                            </div>
-                            <div class="col-md-6">
-                                aaa@gmail.com<br>
-                                bbb@gmail.com<br>
-                                ccc@gmail.com<br>
-                                aaa@gmail.com<br>
-                                bbb@gmail.com<br>
-                                ccc@gmail.com<br>
-                                jhcse5189@gmail.com<br>
-                            </div>
+                    <div class="row">
+                        <div class="col adj-text">    
+                            <h5>Contact</h5><hr>
+                            <span>icewall.executive@gmail.com</span>
+                            <span></span>
                         </div>
-                        <br>
                     </div>
-                  </div>
+                </div>
+                <div class="col-md-6 mt-2">
+                    <h5>2020 임원진</h5><hr>
+                    <div class="row adj-text">
+                        <div class="col-md-5">
+                            회장_김현수<br>
+                            부회장_김수연<br>
+                            총무_김지훈<br>
+                            기획부_최서연<br>
+                            기획부_차다윤<br>
+                            인사부장_박예진<br>
+                            기술부장_조현서<br>
+                        </div>
+                        <div class="col-md-7">
+                            aaa@gmail.com<br>
+                            bbb@gmail.com<br>
+                            ccc@gmail.com<br>
+                            aaa@gmail.com<br>
+                            bbb@gmail.com<br>
+                            ccc@gmail.com<br>
+                            jhcse5189@gmail.com
+                        </div>
+                    </div>
+                    <br>
+                </div>
                 </div>
             </div>
-        </section>
+        </div>
 
     </div>
+
+    <!-- Footer -->
+    <!-- Contact section -->
+    <footer>
+        <!-- Copyright section -->
+        <div id="copyright" class="footer-below pb-4">
+
+            <div class="">
+                <p></p>
+                <hr style="color: #6A6F7A">
+                <p class="text-center" style="color: #919191">
+                    COPYRIGHT &copy; 2020 Hanyang University Student CERT, ICEWALL. All rights reserved. ||
+                    <a href="#" style="color: gray;">
+                        <strong>개인정보처리방침</strong>
+                    </a>
+                </p>
+                <br>
+            </div>
+        </div>
+    </footer>
 
     <!-- Recent Event
     - 모집 마감
@@ -174,29 +192,6 @@
     <!-- Gallery -->
 
     <!-- Sponsores / Contact / Copyright -->
-
-
-    <!-- Footer -->
-    <!-- Contact section -->
-    <footer>
-        <!-- Copyright section -->
-        <div id="copyright" class="footer-below pb-4">
-
-            <div class="container">
-                <p></p>
-                <hr style="color: #6A6F7A">
-                <p class="text-center" style="color: #919191">
-                    COPYRIGHT &copy; 2020 Hanyang University Student CERT, ICEWALL. All rights reserved. ||
-                    <a href="#" style="color: gray;">
-                        <strong>개인정보처리방침</strong>
-                    </a>
-                </p>
-                <br>
-            </div>
-        </div>
-    </footer>
-
-
     
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
